@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/fragmentPortfolio">
+
+    <fragment
+        android:id="@+id/fragmentPortfolio"
+        android:name="com.projects.neo.presentation.home.portfolio.FragmentPortfolio"
+        android:label="FragmentPortfolio" >
+        <argument android:name="selected_portfolio" app:argType="com.projects.neo.data.model.Portfolio"/>
+
+        <action
+            android:id="@+id/action_fragmentPortfolio_to_fragmentPortfolioDetails"
+            app:destination="@id/fragmentPortfolioDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPortfolioDetails"
+        android:name="com.projects.neo.presentation.home.portfolio_details.FragmentPortfolioDetails"
+        android:label="FragmentPortfolioDetails" />
+</navigation>

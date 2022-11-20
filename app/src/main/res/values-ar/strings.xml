@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="ok">حسنا</string>
+
+    <string name="login">تسجيل الدخول</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="balance">رصيد الحساب</string>
+    <string name="earnings">إجمالي الأرباح</string>
+    <string name="date">التاريخ</string>
+    <string name="risk_score">سجل المخاطر</string>
+    <string name="investment_type">نوع الاستثمار</string>
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="change_language">تغيير اللغة</string>
+</resources>

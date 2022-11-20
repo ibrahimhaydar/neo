@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name" translatable="false">Neo</string>
+    <string name="ok">Ok</string>
+
+    <string name="login">Login1</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="etf" translatable="false">ETF</string>
+    <string name="mmf" translatable="false">MMF</string>
+    <string name="balance">Balance</string>
+    <string name="earnings">Earnings</string>
+    <string name="date">Date</string>
+    <string name="risk_score">Risk Score</string>
+    <string name="investment_type">Investment Type</string>
+    <string name="home">Home</string>
+    <string name="change_language">Change Language</string>
+
+</resources>

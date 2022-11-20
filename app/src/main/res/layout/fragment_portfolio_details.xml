@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_start_end"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/portfolio_item_height"
+        android:orientation="horizontal"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/normal_margin"
+            android:layout_height="@dimen/portfolio_item_height"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="@dimen/normal_radius"
+            android:background="@drawable/round_rect_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.projects.neo.data.util.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray_dark"
+                    android:textSize="@dimen/normal_text"
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/balance"
+                    android:gravity="center"
+                    />
+                <com.projects.neo.data.util.custom.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                     android:textSize="@dimen/big_text"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textDirection="ltr"
+                    android:textColor="@color/text_gray_dark"
+                    android:id="@+id/tvBalanceValue"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:layout_height="@dimen/portfolio_item_height"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="@dimen/normal_radius"
+            android:background="@drawable/round_rect_white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.projects.neo.data.util.custom.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvEarning"
+                    android:textColor="@color/text_gray_dark"
+                    android:textSize="@dimen/normal_text"
+                    android:layout_gravity="center"
+                    android:text="@string/earnings"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    />
+                <com.projects.neo.data.util.custom.CustomTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textSize="@dimen/big_text"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textDirection="ltr"
+                    android:textColor="@color/text_gray_dark"
+                    android:id="@+id/tvEarningValue"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <com.projects.neo.data.util.custom.CustomTextViewBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textAlignment="viewStart"
+        android:layout_marginEnd="@dimen/medium_margin"
+        android:textSize="@dimen/normal_text"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:layout_marginTop="@dimen/margin_start_end"
+        android:text="@string/date"
+        android:textColor="@color/text_gray_dark"
+        android:id="@+id/tvPortfolioName"/>
+
+    <com.projects.neo.data.util.custom.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDateValue"
+        android:textColor="@color/text_gray_dark"
+        android:textSize="@dimen/normal_text"
+        android:layout_gravity="start"
+        android:textDirection="ltr"
+        android:textAlignment="viewStart"
+        android:gravity="start"
+        android:layout_marginTop="@dimen/small_margin"
+        />
+
+
+    <com.projects.neo.data.util.custom.CustomTextViewBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textAlignment="viewStart"
+        android:layout_marginEnd="@dimen/medium_margin"
+        android:textSize="@dimen/normal_text"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:layout_marginTop="@dimen/margin_start_end"
+        android:text="@string/risk_score"
+        android:textColor="@color/text_gray_dark"
+        android:id="@+id/tvRiskName"/>
+
+    <com.projects.neo.data.util.custom.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRiskValue"
+        android:textColor="@color/text_gray_dark"
+        android:textSize="@dimen/normal_text"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:layout_marginTop="@dimen/small_margin"
+        />
+
+
+    <com.projects.neo.data.util.custom.CustomTextViewBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textAlignment="viewStart"
+        android:layout_marginEnd="@dimen/medium_margin"
+        android:textSize="@dimen/normal_text"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:layout_marginTop="@dimen/margin_start_end"
+        android:text="@string/investment_type"
+        android:textColor="@color/text_gray_dark"
+        android:id="@+id/tvInvestmentTypeName"/>
+
+    <com.projects.neo.data.util.custom.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvInvestmentTypeValue"
+        android:textColor="@color/text_gray_dark"
+        android:textSize="@dimen/normal_text"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:textAlignment="viewStart"
+        android:layout_marginTop="@dimen/small_margin"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chart_height"
+            android:layout_marginTop="@dimen/medium_margin" />
+       <include layout="@layout/loading" android:id="@+id/loader"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

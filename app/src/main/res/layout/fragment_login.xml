@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_start_end"
+    >
+
+    <com.projects.neo.data.util.custom.CustomTextViewBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/big_text"
+        android:text="@string/login"
+        android:textColor="@color/text_gray_dark"
+        android:layout_marginTop="@dimen/normal_margin"/>
+
+
+    <com.projects.neo.data.util.custom.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:id="@+id/etEmail"
+        android:background="@drawable/round_rect_white_gray_border"
+        android:layout_marginTop="@dimen/big_margin"
+        android:textColor="@color/text_gray_dark"
+        android:textSize="@dimen/small_text"
+        android:maxLines="1"
+        android:textAlignment="viewStart"
+        android:paddingStart="@dimen/normal_margin"
+        android:hint="@string/email"
+        android:textColorHint="@color/text_gray_light"/>
+
+
+    <com.projects.neo.data.util.custom.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:id="@+id/etPassword"
+        android:maxLines="1"
+        android:background="@drawable/round_rect_white_gray_border"
+        android:layout_marginTop="@dimen/big_margin"
+        android:textColor="@color/text_gray_dark"
+        android:textSize="@dimen/small_text"
+        android:textAlignment="viewStart"
+        android:inputType="textPassword"
+        android:paddingStart="@dimen/normal_margin"
+        android:hint="@string/password"
+        android:textColorHint="@color/text_gray_light"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normal_text"
+        android:id="@+id/btLogin"
+        android:textAllCaps="false"
+        android:background="@drawable/roud_rect_primary"
+        android:layout_marginTop="@dimen/big_margin"
+        android:text="@string/login"/>
+</LinearLayout>
